@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Make the iframe cover the entire page */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove iframe border */
+        }
+    </style>
+</head>
+<body>
+    <!-- Create an iframe element and set its source -->
+    <iframe id="embeddedWebsite" src="https://stenunblocked.github.io/1v1-lol/"></iframe>
+
+    <script>
+        // JavaScript to resize the iframe to the window's size
+        function resizeIframe() {
+            var iframe = document.getElementById('embeddedWebsite');
+            iframe.style.height = window.innerHeight + 'px';
+        }
+
+        // Attach the resize function to the window's resize event
+        window.addEventListener('resize', resizeIframe);
+
+        // Initial resizing
+        resizeIframe();
+    </script>
+</body>
+</html>
